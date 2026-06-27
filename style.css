@@ -205,11 +205,8 @@ footer{
 /* ---------- First View ---------- */
 
 .fade-up{
-    opacity:0;
-    transform:translateY(40px);
-
-    animation:heroFade 1.5s forwards;
-    animation-delay:3s;
+    opacity:1;
+    transform:none;
 }
 
 @keyframes heroFade{
