@@ -14,7 +14,15 @@
 
 <body>
 
-<header class="hero">
+<div id="loading">
+    <div class="ink"></div>
+
+    <img src="logo.png" class="loading-logo">
+
+    <p class="loading-text">雲外蒼天</p>
+</div>
+
+<header class="hero fade-up">
     <img src="logo.png" class="logo" alt="剣道部ロゴ">
 
     <h1>京都翔英高等学校剣道部</h1>
@@ -85,5 +93,18 @@
     © Kyoto Shoei Kendo Club
 </footer>
 
+<script>
+window.addEventListener("scroll", function(){
+
+    const hero = document.querySelector(".hero");
+
+    let y = window.scrollY;
+
+    hero.style.backgroundPositionY =
+        y * 0.4 + "px";
+
+});
+</script>
+    
 </body>
 </html>
