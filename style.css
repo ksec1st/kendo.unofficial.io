@@ -291,18 +291,6 @@ footer{
     }
 }
 
-/* ---------- Logo ---------- */
-.logo{
-    width:220px;
-    z-index:2;
-
-    filter:
-        drop-shadow(0 0 20px rgba(216,180,74,0.5));
-
-    animation:
-        float 4s ease-in-out infinite;
-}
-
 /* ---------- Title ---------- */
 h1{
     font-size:3rem;
@@ -323,5 +311,3 @@ h1{
 
     margin-top:20px;
 }
-
-/* ---------- Title ---------- */
