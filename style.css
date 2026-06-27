@@ -223,11 +223,14 @@ footer{
 /* ---------- Golden Lines ---------- */
 .hero::after{
     content:"";
-    width:200px;
-    height:2px;
-    background:#d8b44a;
 
     position:absolute;
+
+    width:180px;
+    height:2px;
+
+    background:#d8b44a;
+
     bottom:120px;
 
     animation:line 2s forwards;
@@ -239,7 +242,7 @@ footer{
     }
 
     to{
-        width:200px;
+        width:180px;
     }
 }
 
@@ -257,3 +260,68 @@ footer{
         transform:translateY(-10px);
     }
 }
+
+/* ---------- Golden Light ---------- */
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:radial-gradient(
+        circle,
+        rgba(216,180,74,0.18),
+        transparent 70%
+    );
+
+    animation:glow 8s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        transform:scale(0.9);
+        opacity:0.4;
+    }
+
+    to{
+        transform:scale(1.2);
+        opacity:0.7;
+    }
+}
+
+/* ---------- Logo ---------- */
+.logo{
+    width:220px;
+    z-index:2;
+
+    filter:
+        drop-shadow(0 0 20px rgba(216,180,74,0.5));
+
+    animation:
+        float 4s ease-in-out infinite;
+}
+
+/* ---------- Title ---------- */
+h1{
+    font-size:3rem;
+    margin-top:30px;
+
+    letter-spacing:8px;
+
+    text-shadow:
+        0 0 20px rgba(216,180,74,0.4);
+}
+
+.motto{
+    color:#d8b44a;
+
+    font-size:2rem;
+
+    letter-spacing:10px;
+
+    margin-top:20px;
+}
+
+/* ---------- Title ---------- */
