@@ -220,18 +220,13 @@ footer{
 
 /* ---------- Golden Lines ---------- */
 .hero::after{
-    content:"";
+    bottom:90px;
+}
 
-    position:absolute;
-
-    width:180px;
-    height:2px;
-
-    background:#d8b44a;
-
-    bottom:120px;
-
-    animation:line 2s forwards;
+@media (max-width:768px){
+    .hero::after{
+        bottom:60px;
+    }
 }
 
 @keyframes line{
