@@ -218,27 +218,6 @@ footer{
     }
 }
 
-/* ---------- Golden Lines ---------- */
-.hero::after{
-    bottom:90px;
-}
-
-@media (max-width:768px){
-    .hero::after{
-        bottom:60px;
-    }
-}
-
-@keyframes line{
-    from{
-        width:0;
-    }
-
-    to{
-        width:180px;
-    }
-}
-
 /* ---------- Logo Animation ---------- */
 .logo{
     animation:float 4s ease-in-out infinite;
